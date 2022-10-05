@@ -1,0 +1,6 @@
+This project is focused to store the database of students on  the following grounds :-
+1. Registraiton Number
+2. Name
+3. Marks in CSE1001
+4. Marks in CSE1002
+5. Proctor ID
