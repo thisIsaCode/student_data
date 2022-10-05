@@ -22,7 +22,8 @@ int main()
     }
     if (option == 1)
     {
-        cout << "Enter the number of the stduents : ";
+        cout<<"Add new students "<<endl;
+        cout << "Enter the number of the stduents you want to enter : ";
         cin >> n;
         count_n = count_n + n;
         for (int i = 0; i < n; i++)
@@ -53,6 +54,7 @@ int main()
     else if (option == 2)
     {
         char regno[9];
+        cout<<"Student Portal "<<endl;
         cout << "Enter your registration number : ";
         cin >> regno;
         ifstream infile;
@@ -82,6 +84,7 @@ int main()
     }
     else if (option == 3)
     {
+        cout<<"Faculty Portal "<<endl;
         char subcode[7];
         cout << "Enter your subject code : ";
         cin >> subcode;
@@ -154,6 +157,7 @@ int main()
     }
     else if(option==4)
     {
+        cout<<"Proctor Portal "<<endl;
         char procid[7];
         cout<<"Enter your proctor ID : ";
         cin>>procid;
@@ -184,6 +188,7 @@ int main()
     }
     else if(option==5)
     {
+        cout<<"Admin Portal "<<endl;
         char password[25];
         cout<<"Enter the admin password : ";
         cin>>password;
