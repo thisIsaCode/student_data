@@ -22,8 +22,7 @@ int main()
     }
     if (option == 1)
     {
-        cout<<"Add new students "<<endl;
-        cout << "Enter the number of the stduents you want to enter : ";
+        cout << "Enter the no. of stduents : ";
         cin >> n;
         count_n = count_n + n;
         for (int i = 0; i < n; i++)
@@ -54,7 +53,7 @@ int main()
     else if (option == 2)
     {
         char regno[9];
-        cout<<"Student Portal "<<endl;
+        cout<<"Student Portal:  "<<endl;
         cout << "Enter your registration number : ";
         cin >> regno;
         ifstream infile;
@@ -79,7 +78,7 @@ int main()
         }
         if (check == 0)
         {
-            cout << "No such registration number found!" << endl; // For incorrect registration number.
+            cout << "No such registration number is found in the data!" << endl; // For incorrect registration number.
         }
     }
     else if (option == 3)
@@ -95,7 +94,7 @@ int main()
         cin >> option;
         if (option == 1)
         {
-            cout << "Warning! You would need to add mark details for all the students! " << endl;
+            cout << "Warning! You need to add marks details for all the students! " << endl;
             for (int i = 0; i < count_n; i++)
             {
                 fstream file("Example.txt");
@@ -152,7 +151,7 @@ int main()
         infile.close();
         if(check==0)
         {
-            cout<<"No such subject code found!"<<endl;
+            cout<<"No match of the subject code is found!"<<endl;
         }
     }
     else if(option==4)
